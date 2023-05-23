@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 #region noktalar arasý hareket
 public class LineRendererCharacter : MonoBehaviour
@@ -18,10 +19,19 @@ public class LineRendererCharacter : MonoBehaviour
     private Vector3 direction;
     private Animator animator;
     private bool isMoving = false;
-    private bool isEndPoint = false;
+    public bool isEndPoint = false;
+    private int currentLevel;
+    private UserProgress userProgress = new UserProgress();
+
+    public UnityEvent OnEndPointChanged; // UnityEvent tanýmlanmasý
+
 
     private void Start()
     {
+        //OnEndPointChanged.AddListener(HandleEndPointChanged);
+
+
+        currentLevel = userProgress.currentLevel;
         // pathPoints dizisindeki pozisyonlar, empty nesnelerin konumlarýna atanýr.
         Vector3[] positions = new Vector3[pathPoints.Length];
         for (int i = 0; i < pathPoints.Length; i++)
@@ -51,7 +61,13 @@ public class LineRendererCharacter : MonoBehaviour
         }
         Debug.Log("Current path index:" + currentPathIndex);
         Debug.Log("Current Animation:" + touchAnimationNames[currentPathIndex]);
+        Debug.Log("char endpoint" + isEndPoint);
     }
+
+    //private void HandleEndPointChanged()
+    //{
+    //    // isEndPoint deðeri deðiþtiðinde yapýlacak iþlemler
+    //}
 
     private void CheckEndPoint()
     {
@@ -59,6 +75,11 @@ public class LineRendererCharacter : MonoBehaviour
         {
             isEndPoint = true;
             animator.Play(touchAnimationNames[currentPathIndex]);
+            currentLevel++;
+            userProgress.SavePlayerProgress(currentLevel);
+
+            OnEndPointChanged.Invoke(); // OnEndPointChanged olayýný tetikleme
+
         }
     }
 

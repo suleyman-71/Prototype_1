@@ -1,29 +1,42 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject[] uiElementsToHide; // Kaybolacak UI elementlerini tutan dizi
+    public GameObject uiElementForEnd;
+    public GameObject uiElementForStart;
+    public GameObject gamePlayController;
 
-    private bool isUIVisible = true; // UI elementlerinin görünürlüðünü takip eden bir flag
+    private LineRendererCharacter lineRendererCharacter;
+
+
+    private void Start()
+    {
+        lineRendererCharacter = gamePlayController.GetComponent<LineRendererCharacter>();
+        lineRendererCharacter.OnEndPointChanged.AddListener(HandleEndPointChanged);
+
+        lineRendererCharacter.enabled = false;
+        uiElementForEnd.SetActive(false);
+        uiElementForStart.SetActive(true);
+    }
 
     private void Update()
     {
-        // Ekrana dokunulduðunda veya fare týklandýðýnda UI'nýn görünürlüðünü deðiþtir
-        if (Input.GetMouseButtonDown(0))
-        {
-            ToggleUIVisibility();
-        }
+
     }
 
-    private void ToggleUIVisibility()
+    private void HandleEndPointChanged()
     {
-        isUIVisible = !isUIVisible; // Flag'i tersine çevir
-
-        // UI elementlerini gizle veya göster
-        foreach (GameObject element in uiElementsToHide)
-        {
-            element.SetActive(isUIVisible);
-        }
+        uiElementForEnd.SetActive(true);
+    }
+    public void StartGame()
+    {
+        gamePlayController.GetComponent<LineRendererCharacter>().enabled = true;
+        uiElementForStart.SetActive(false);
+    }
+    public void NextLevel()
+    {
+        SceneManager.LoadScene("PlayingScene");
     }
 }
 
