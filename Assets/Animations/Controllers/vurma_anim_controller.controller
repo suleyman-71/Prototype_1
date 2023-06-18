@@ -10,8 +10,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 611224269326026690}
-    m_Position: {x: 262.8, y: 290, z: 0}
+    m_State: {fileID: 5774943272098988182}
+    m_Position: {x: 427.52783, y: 221.67285, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -21,7 +21,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 611224269326026690}
+  m_DefaultState: {fileID: 5774943272098988182}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -44,14 +44,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &611224269326026690
+--- !u!1102 &5774943272098988182
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: hit_barrier_002|hit_barrier_002|hit_barrier_002|hit_barrier_002Action
+  m_Name: carpma_engeli_anim
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -64,8 +64,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7862609588015416146, guid: 135df22de8f4dbc4b9e1951674b85c99,
-    type: 3}
+  m_Motion: {fileID: 7400000, guid: 853b41a1f6081c547803b0e029faa5f2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
