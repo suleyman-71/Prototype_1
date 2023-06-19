@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1872571718861122504}
   - component: {fileID: 493458691514592717}
   m_Layer: 0
-  m_Name: s_2.005
+  m_Name: inme_dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 8206752769531249465}
   - component: {fileID: 63176011364045347}
   m_Layer: 0
-  m_Name: clip_dot
+  m_Name: tirmanma_dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 7190176805745284838}
   - component: {fileID: 8799857820006878418}
   m_Layer: 0
-  m_Name: s_2.006
+  m_Name: asili_kalma_dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
