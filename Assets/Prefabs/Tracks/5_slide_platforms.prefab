@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4564053363480177110}
   - component: {fileID: 3999201081369146068}
   m_Layer: 0
-  m_Name: r_2.002
+  m_Name: dot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 8649997433558122336}
   - component: {fileID: 4057941650957481472}
   m_Layer: 0
-  m_Name: dot_1
+  m_Name: dot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 3700070464150744116}
   - component: {fileID: 8352648105036713038}
   m_Layer: 0
-  m_Name: road_point_s
+  m_Name: dot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

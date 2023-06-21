@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2867428812107428794}
   - component: {fileID: 4726653700658735636}
   m_Layer: 0
-  m_Name: third_ch.010
+  m_Name: dot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 5713607443233281826}
   - component: {fileID: 5244715887458727959}
   m_Layer: 0
-  m_Name: third_ch.002
+  m_Name: dot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 3703199757491036925}
   - component: {fileID: 4051874729284268923}
   m_Layer: 0
-  m_Name: second_ch.002
+  m_Name: dot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 1026750558630774455}
   - component: {fileID: 7288508699436157090}
   m_Layer: 0
-  m_Name: second_ch.012
+  m_Name: halka_atlama_dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

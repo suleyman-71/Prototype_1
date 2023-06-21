@@ -1771,6 +1771,7 @@ GameObject:
   - component: {fileID: 8966281015863877372}
   - component: {fileID: 8966281015863877370}
   - component: {fileID: 8966281015863877371}
+  - component: {fileID: 6194386051550238048}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -1921,6 +1922,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  clipPoints: []
   animationClips:
   - {fileID: 7400000, guid: a239c92aae216d24d97a9fdcbecf406e, type: 2}
   - {fileID: 7400000, guid: 470366e269c0e964b9ee30755e811782, type: 2}
@@ -1930,6 +1932,7 @@ MonoBehaviour:
   - {fileID: 7400000, guid: 682a6c341857f8641ac9e1d6cc582015, type: 2}
   - {fileID: 7400000, guid: 7bde78c0a06f87946b6d021b5f9be927, type: 2}
   - {fileID: 7400000, guid: 27692ee82ec7e684caa4838ff86eabdb, type: 2}
+  - {fileID: 7400000, guid: d0ebbf1868e17c246aff25d2e3825a90, type: 2}
   startAnimationName: idle_anim
   touchAnimationNames: []
   defaultAnimationNames: []
@@ -1937,6 +1940,26 @@ MonoBehaviour:
   OnEndPointChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &6194386051550238048
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585393301892711494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 058e3f1b3a470e840852b28e5f3cc3a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &9115612308534938498
 GameObject:
   m_ObjectHideFlags: 0
