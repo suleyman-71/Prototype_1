@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 1312136742645263377}
   - component: {fileID: 9167929412224227116}
   - component: {fileID: 3981163898938784221}
+  - component: {fileID: 6178349085156692398}
   m_Layer: 0
   m_Name: road.003
   m_TagString: Untagged
@@ -249,6 +250,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6178349085156692398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219396037342937513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011111114, y: 0.011111188, z: 0.020062434}
+  m_Center: {x: 0.003159462, y: -0.005989156, z: 0.010160743}
 --- !u!1 &3323192596381425732
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +953,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: vurma_engeli
       objectReference: {fileID: 0}
+    - target: {fileID: 7379317061236822848, guid: f95e519c817225f45833f6154247640b,
+        type: 3}
+      propertyPath: m_TagString
+      value: engel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f95e519c817225f45833f6154247640b, type: 3}
 --- !u!4 &2975208155362443643 stripped
@@ -947,3 +966,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3080884513733385289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5523974873230380809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7379317061236822848, guid: f95e519c817225f45833f6154247640b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3080884513733385289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &8980269840174850664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523974873230380809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.54647726, y: 0.26316014, z: 0.13133407}
+  m_Center: {x: 0.24456494, y: 0.0020218513, z: 0.006224125}
