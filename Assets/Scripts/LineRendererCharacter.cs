@@ -57,6 +57,34 @@ public class LineRendererCharacter : MonoBehaviour
         }
     }
 
+    private void ResetCharacterPosition()
+    {
+        // Karakterin konumunu spawn noktasına ayarla
+        transform.position = pathPoints[0].position;
+
+        // Gerekli diğer ayarlamaları yap
+        currentPathIndex = 0;
+        currentDistance = 0f;
+        direction = (pathPoints[currentPathIndex + 1].position - pathPoints[currentPathIndex].position).normalized;
+        isMoving = false;
+        isEndPoint = false;
+
+        // Animasyonu "idle" olarak oynat
+        animator.Play("idle");
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("engel"))
+        {
+            // Engel tag'ine sahip bir cisimle temas oldu
+            Debug.Log("Karakter engelle temas etti.");
+            // Karakteri spawn noktasına götür
+            ResetCharacterPosition();
+        }
+    }
+
     private void CheckEndPoint()
     {
         if (currentPathIndex == pathPoints.Length - 1 && Vector3.Distance(transform.position, pathPoints[currentPathIndex].position) < 0.1f)
